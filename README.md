@@ -180,3 +180,71 @@ sequenceDiagram
 - Flutter — Local caching / Offline-first: https://docs.flutter.dev/get-started/fundamentals/local-caching  
 - Riverpod — Docs: https://riverpod.dev/  
 - OWASP — Mobile Top 10 (2024): https://owasp.org/www-project-mobile-top-10/
+
+---
+
+## Visión del Producto (SmartStorage Garage)
+Plataforma móvil para gestionar minibodegas/garajes inteligentes: reserva, acceso móvil (QR/NFC/PIN), pagos y alertas de sensores (humedad/intrusión). Enfoque **offline-first** con notificaciones y eventos IoT integrados.
+
+## MVP (Alcance Sprint 1)
+- Login y listado de unidades.
+- Comando de apertura (simulado o stub).
+- Registro básico de eventos.
+
+## Criterios de Aceptación (ejemplos)
+- **Dado** un usuario con credenciales válidas, **cuando** inicia sesión, **entonces** ve su listado de unidades.
+- **Dado** una unidad visible, **cuando** presiono "Abrir", **entonces** se ejecuta el comando y se muestra el resultado (éxito/error).
+- **Dado** un evento de apertura, **cuando** se procesa, **entonces** queda registrado para auditoría.
+
+## Patrones de Diseño Seleccionados (GoF)
+- **Factory Method** (datasources remoto/local)
+- **Strategy** (algoritmos de pronóstico de ocupación)
+- **Observer** (eventos de sensores y notificaciones)
+- **Adapter** (cliente MQTT/RTSP → puerto de dominio)
+- **Facade** (servicio de acceso unificado)
+- **Singleton** (cliente HTTP/secure storage)
+- **Template Method** (pipeline de sincronización offline)
+
+## Referencias (APA)
+- Android Developers. (n.d.). *Guide to app architecture*. https://developer.android.com/topic/architecture
+- Android Developers. (n.d.). *Architecture recommendations*. https://developer.android.com/topic/architecture/recommendations
+- Fowler, M. (n.d.). *GUI architectures*. https://martinfowler.com/eaaDev/uiArchs.html
+- Martin, R. C. (2012, August 13). *The clean architecture*. https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- Flutter. (n.d.). *State management*. https://docs.flutter.dev/data-and-backend/state-mgmt
+- Flutter. (n.d.). *Local caching / Offline-first*. https://docs.flutter.dev/get-started/fundamentals/local-caching
+- Reddix, A. (2023). *Top 10 design patterns in Flutter: A comprehensive guide*. https://dev.to/aaronreddix/top-10-design-patterns-in-flutter-a-comprehensive-guide-50ca
+- OWASP Foundation. (2024). *OWASP Mobile Top 10 – 2024*. https://owasp.org/www-project-mobile-top-10/
+
+---
+
+## Visión del Producto (SmartStorage Garage)
+Plataforma móvil para gestionar minibodegas/garajes inteligentes: reserva, acceso móvil (QR/NFC/PIN), pagos y alertas de sensores (humedad/intrusión). Enfoque **offline-first** con notificaciones y eventos IoT integrados.
+
+## MVP (Alcance Sprint 1)
+- Login y listado de unidades.
+- Comando de apertura (simulado o stub).
+- Registro básico de eventos.
+
+## Criterios de Aceptación (ejemplos)
+- **Dado** un usuario con credenciales válidas, **cuando** inicia sesión, **entonces** ve su listado de unidades.
+- **Dado** una unidad visible, **cuando** presiono "Abrir", **entonces** se ejecuta el comando y se muestra el resultado (éxito/error).
+- **Dado** un evento de apertura, **cuando** se procesa, **entonces** queda registrado para auditoría.
+
+## Patrones de Diseño Seleccionados (GoF)
+- **Factory Method** (datasources remoto/local)
+- **Strategy** (algoritmos de pronóstico de ocupación)
+- **Observer** (eventos de sensores y notificaciones)
+- **Adapter** (cliente MQTT/RTSP → puerto de dominio)
+- **Facade** (servicio de acceso unificado)
+- **Singleton** (cliente HTTP/secure storage)
+- **Template Method** (pipeline de sincronización offline)
+
+## Referencias (APA)
+- Android Developers. (n.d.). *Guide to app architecture*. https://developer.android.com/topic/architecture
+- Android Developers. (n.d.). *Architecture recommendations*. https://developer.android.com/topic/architecture/recommendations
+- Fowler, M. (n.d.). *GUI architectures*. https://martinfowler.com/eaaDev/uiArchs.html
+- Martin, R. C. (2012, August 13). *The clean architecture*. https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- Flutter. (n.d.). *State management*. https://docs.flutter.dev/data-and-backend/state-mgmt
+- Flutter. (n.d.). *Local caching / Offline-first*. https://docs.flutter.dev/get-started/fundamentals/local-caching
+- Reddix, A. (2023). *Top 10 design patterns in Flutter: A comprehensive guide*. https://dev.to/aaronreddix/top-10-design-patterns-in-flutter-a-comprehensive-guide-50ca
+- OWASP Foundation. (2024). *OWASP Mobile Top 10 – 2024*. https://owasp.org/www-project-mobile-top-10/
