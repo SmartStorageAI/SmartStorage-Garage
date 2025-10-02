@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'screens/registro_cliente.dart';
 import 'screens/ver_clientes.dart';
 import 'screens/graficas.dart';
+import 'screens/home_screen.dart';
+
 
 void main() {
   runApp(const MyCRMApp());
@@ -33,6 +35,7 @@ class _CRMHomePageState extends State<CRMHomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = const [
+    HomeScreen(),
     RegistroClienteScreen(),
     VerClientesScreen(),
     GraficasScreen(),
@@ -53,6 +56,10 @@ class _CRMHomePageState extends State<CRMHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person_add),
             label: 'Registrar',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_home),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
